@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talents — Bloom</title>
+  <meta name="description" content="Les talents Bloom : créateurs gaming et divertissement francophones accompagnés par Vanille Pois.">
+  <link rel="icon" type="image/png" href="images/logos/favicon.png">
+  <link rel="apple-touch-icon" href="images/logos/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="entete-page">
+    <div class="wrap">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav-logo" href="index.html" aria-label="Accueil Bloom"><img class="logo-typo" src="images/logos/bloom-noir.png" alt="Bloom"></a>
+        <button class="nav-burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <div class="nav-liens">
+          <a href="talents.html" aria-current="page">Talents</a>
+          <a href="campagnes.html">Campagnes</a>
+          <a href="index.html#services">Services</a>
+          <a class="btn btn-noir" href="index.html#contact">Me contacter</a>
+        </div>
+      </nav>
+      <div class="titre-centre">
+        <img src="images/logos/papillon-orange.png" alt="" aria-hidden="true">
+        <h1>Les talents</h1>
+        <p class="chapo">Cliquez sur un créateur pour découvrir son profil et ses dernières campagnes.</p>
+      </div>
+    </div>
+  </header>
+  <svg class="vague" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v30c-180 50-360 60-540 30S540 0 360 25 120 80 0 50z" fill="#CAECFF"/></svg>
+
+  <main>
+    <section class="section" style="padding-top:24px">
+      <div class="wrap pile-32">
+        <div class="selecteur" id="filtre-categories" role="group" aria-label="Filtrer par catégorie"></div>
+        <div class="grille-roster" id="roster" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <dialog class="fiche-dialog" id="fiche-talent" aria-labelledby="fiche-titre">
+      <button class="fiche-fermer" type="button" aria-label="Fermer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="fiche-contenu" id="fiche-contenu"></div>
+    </dialog>
+
+    <section class="contact" style="padding-top:0">
+      <div class="wrap contact-bloc section-orange">
+        <img class="logo-principal" src="images/logos/bloom-blanc.png" alt="Bloom" style="height:64px">
+        <h2>Un coup de cœur dans le roster ?</h2>
+        <p>Lançons votre campagne ensemble. D’autres créateurs de mon réseau pourront aussi rejoindre l’aventure.</p>
+        <a class="btn btn-noir" href="mailto:vanille@bloomtalent.fr">vanille@bloomtalent.fr</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="wrap">
+      <img src="images/logos/bloom-blanc.png" alt="Bloom">
+      <div class="pied-droite">
+        <p>Vanille Pois - Talent Manager · <a href="https://www.linkedin.com/in/vanille-pois/" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p class="pied-liens"><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/icones.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
