@@ -108,9 +108,9 @@ window.BLOOM = {
       nom: "Nasse",
       categories: ["Valorant"],
       plateformes: [
+        { nom: "TikTok", compte: "@nasse.721", abonnes: 60000, lien: "https://www.tiktok.com/@nasse.721" },
         { nom: "Twitch", compte: "Nasse721", abonnes: 33000, lien: "https://www.twitch.tv/nasse721" },
         { nom: "YouTube", compte: "Nasse", abonnes: 29000, lien: "https://www.youtube.com/@Nasse721" },
-        { nom: "TikTok", compte: "@nasse.721", abonnes: 29000, lien: "https://www.tiktok.com/@nasse.721" },
         { nom: "Instagram", compte: "@nasse_721", abonnes: 12000, lien: "https://www.instagram.com/nasse_721/" }
       ],
       photo: "images/talents/nasse.jpg"
