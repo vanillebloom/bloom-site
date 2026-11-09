@@ -15,29 +15,29 @@ window.BLOOM = {
      contour : true pour garder le contour bleu (logos sur fond blanc ou très clair)
      rond    : logo au format carré, affiché dans un rond sur la page Campagnes (vue « Par marque »)  */
   marques: [
-    { nom: "HyperX", logo: "images/marques/hyperx.png", fond: "#E31838", rond: "images/marques/rond/hyperx.jpg" },
-    { nom: "MaxEsport", logo: "images/marques/maxesport.jpg", remplir: true, contour: true, rond: "images/marques/rond/maxesport.jpg" },
-    { nom: "Filmora", logo: "images/marques/filmora.jpg", remplir: true, rond: "images/marques/rond/filmora.jpg" },
-    { nom: "War Thunder", logo: "images/marques/war-thunder.jpg", remplir: true, rond: "images/marques/rond/war-thunder.jpg" },
-    { nom: "FragPunk", logo: "images/marques/fragpunk.jpg", remplir: true, rond: "images/marques/rond/fragpunk.jpg" },
-    { nom: "AutoFull", logo: "images/marques/autofull.jpg", remplir: true, contour: true, rond: "images/marques/rond/autofull.jpg" },
-    { nom: "Logitech G", logo: "images/marques/logitech.jpg", remplir: true, rond: "images/marques/rond/logitech-g.jpg" },
-    { nom: "SIHOO", logo: "images/marques/sihoo.jpg", remplir: true, rond: "images/marques/rond/sihoo.jpg" },
-    { nom: "Coupert", logo: "images/marques/coupert.jpg", remplir: true, rond: "images/marques/rond/coupert.jpg" },
-    { nom: "REDMAGIC", logo: "images/marques/redmagic.jpg", remplir: true, rond: "images/marques/rond/redmagic.jpg" },
-    { nom: "FlexiSpot", logo: "images/marques/flexispot.jpg", remplir: true, rond: "images/marques/rond/flexispot.jpg" },
-    { nom: "Air Up", logo: "images/marques/airup.jpg", remplir: true, rond: "images/marques/rond/air-up.jpg" },
-    { nom: "Surfshark", logo: "images/marques/surfshark.jpg", remplir: true, rond: "images/marques/rond/surfshark.jpg" },
-    { nom: "Holy", logo: "images/marques/holy.jpg", remplir: true, rond: "images/marques/rond/holy.jpg" },
-    { nom: "GearUp", logo: "images/marques/gearup.jpg", remplir: true, rond: "images/marques/rond/gearup.jpg" },
-    { nom: "Raid Shadow", logo: "images/marques/raid.jpg", remplir: true, contour: true, rond: "images/marques/rond/raid-shadow-legends.jpg" },
-    { nom: "IQUNIX", logo: "images/marques/iqunix.jpg", remplir: true, rond: "images/marques/rond/iqunix.jpg" },
-    { nom: "SteelSeries", logo: "images/marques/steelseries.jpg", remplir: true, rond: "images/marques/rond/steelseries.jpg" },
+    { nom: "HyperX", logo: "images/marques/hyperx.webp", fond: "#E31838", rond: "images/marques/rond/hyperx.jpg" },
+    { nom: "MaxEsport", logo: "images/marques/maxesport.webp", remplir: true, contour: true, rond: "images/marques/rond/maxesport.jpg" },
+    { nom: "Filmora", logo: "images/marques/filmora.webp", remplir: true, rond: "images/marques/rond/filmora.jpg" },
+    { nom: "War Thunder", logo: "images/marques/war-thunder.webp", remplir: true, rond: "images/marques/rond/war-thunder.jpg" },
+    { nom: "FragPunk", logo: "images/marques/fragpunk.webp", remplir: true, rond: "images/marques/rond/fragpunk.jpg" },
+    { nom: "AutoFull", logo: "images/marques/autofull.webp", remplir: true, contour: true, rond: "images/marques/rond/autofull.jpg" },
+    { nom: "Logitech G", logo: "images/marques/logitech.webp", remplir: true, rond: "images/marques/rond/logitech-g.jpg" },
+    { nom: "SIHOO", logo: "images/marques/sihoo.webp", remplir: true, rond: "images/marques/rond/sihoo.jpg" },
+    { nom: "Coupert", logo: "images/marques/coupert.webp", remplir: true, rond: "images/marques/rond/coupert.jpg" },
+    { nom: "REDMAGIC", logo: "images/marques/redmagic.webp", remplir: true, rond: "images/marques/rond/redmagic.jpg" },
+    { nom: "FlexiSpot", logo: "images/marques/flexispot.webp", remplir: true, rond: "images/marques/rond/flexispot.jpg" },
+    { nom: "Air Up", logo: "images/marques/airup.webp", remplir: true, rond: "images/marques/rond/air-up.jpg" },
+    { nom: "Surfshark", logo: "images/marques/surfshark.webp", remplir: true, rond: "images/marques/rond/surfshark.jpg" },
+    { nom: "Holy", logo: "images/marques/holy.webp", remplir: true, rond: "images/marques/rond/holy.jpg" },
+    { nom: "GearUp", logo: "images/marques/gearup.webp", remplir: true, rond: "images/marques/rond/gearup.jpg" },
+    { nom: "Raid Shadow", logo: "images/marques/raid.webp", remplir: true, contour: true, rond: "images/marques/rond/raid-shadow-legends.jpg" },
+    { nom: "IQUNIX", logo: "images/marques/iqunix.webp", remplir: true, rond: "images/marques/rond/iqunix.jpg" },
+    { nom: "SteelSeries", logo: "images/marques/steelseries.webp", remplir: true, rond: "images/marques/rond/steelseries.jpg" },
     // Marques sans logo sur l'accueil : seulement le rond de la page Campagnes
     { nom: "OperaGX", rond: "images/marques/rond/operagx.jpg" },
     { nom: "MyLOOT", rond: "images/marques/rond/myloot.jpg" },
     { nom: "MYPC", rond: "images/marques/rond/mypc.jpg", contour: true },
-    { nom: "Eneba", logo: "images/marques/eneba.jpg", remplir: true, rond: "images/marques/rond/eneba.jpg" }
+    { nom: "Eneba", logo: "images/marques/eneba.webp", remplir: true, rond: "images/marques/rond/eneba.jpg" }
   ],
 
   /* ---------- BULLES DU HAUT DE L'ACCUEIL ----------

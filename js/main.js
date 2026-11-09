@@ -110,7 +110,7 @@
     while (liste.length && plein.length < 12) plein = plein.concat(liste);
     doubler(marques, plein.map(function (m) {
       var fond = m.fond ? ' style="background:' + esc(m.fond) + ";border-color:" + esc(m.fond) + '"' : "";
-      return '<div class="marque' + (m.remplir ? " marque-pleine" : "") + (m.contour ? " marque-contour" : "") + '"' + fond + ">" + (m.logo ? '<img src="' + esc(m.logo) + '" alt="' + esc(m.nom) + '" loading="lazy">' : esc(m.nom)) + "</div>";
+      return '<div class="marque' + (m.remplir ? " marque-pleine" : "") + (m.contour ? " marque-contour" : "") + '"' + fond + ">" + (m.logo ? '<img src="' + esc(m.logo) + '" alt="' + esc(m.nom) + '" decoding="async" width="540" height="216">' : esc(m.nom)) + "</div>";
     }).join(""));
   }
 

@@ -206,7 +206,7 @@ h2 { font-size: 40px; font-weight: 700; line-height: 1.1; }
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
-.defile-piste { display: flex; width: max-content; animation: defile 40s linear infinite; }
+.defile-piste { display: flex; width: max-content; animation: defile 40s linear infinite; will-change: transform; transform: translateZ(0); }
 .defile-lent .defile-piste { animation-duration: 55s; }
 .defile:hover .defile-piste { animation-play-state: paused; }
 .defile-groupe { display: flex; gap: 16px; padding-right: 16px; }
