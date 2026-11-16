@@ -76,7 +76,7 @@ async function twitch(lien, f) {
 
 const SOURCES = { YouTube: youtube, TikTok: tiktok, Instagram: instagram, Twitch: twitch };
 
-async function mettreAJour({ f = fetch, cles = { youtube: process.env.YOUTUBE_KEY, apify: process.env.APIFY_TOKEN }, fichier = FICHIER } = {}) {
+async function mettreAJour({ f = fetch, cles = { youtube: (process.env.YOUTUBE_KEY || '').trim().replace(/^["']|["']$/g, ''), apify: (process.env.APIFY_TOKEN || '').trim().replace(/^["']|["']$/g, '') }, fichier = FICHIER } = {}) {
   const lignes = fs.readFileSync(fichier, 'utf8').split('\n');
   let createur = '?';
   const rapport = { maj: [], gardes: [], alertes: [] };
