@@ -73,7 +73,7 @@ window.BLOOM = {
       categories: ["IRL", "Multigaming", "React"],
       plateformes: [
         { nom: "YouTube", compte: "Clinko", abonnes: 427000, lien: "https://www.youtube.com/@Clinkoo" },
-        { nom: "TikTok", compte: "@clinko_", abonnes: 193700, lien: "https://www.tiktok.com/@clinko_" },
+        { nom: "TikTok", compte: "@clinko_", abonnes: 193600, lien: "https://www.tiktok.com/@clinko_" },
         { nom: "YouTube", compte: "Clinko TV", abonnes: 170000, lien: "https://www.youtube.com/@ClinkoTV" },
         { nom: "Twitch", compte: "Clinko", abonnes: 54969, lien: "https://www.twitch.tv/clinko" },
         { nom: "Instagram", compte: "@clinkoo", abonnes: 20168, lien: "https://www.instagram.com/clinkoo/" },
@@ -97,10 +97,10 @@ window.BLOOM = {
       nom: "Falka",
       categories: ["Valorant"],
       plateformes: [
-        { nom: "TikTok", compte: "@falkalive", abonnes: 344600, lien: "https://www.tiktok.com/@falkalive" },
+        { nom: "TikTok", compte: "@falkalive", abonnes: 344500, lien: "https://www.tiktok.com/@falkalive" },
         { nom: "Twitch", compte: "FalkaLive", abonnes: 140221, lien: "https://www.twitch.tv/falkalive" },
         { nom: "YouTube", compte: "Falka", abonnes: 117000, lien: "https://www.youtube.com/@FalkaLive" },
-        { nom: "Instagram", compte: "@falkalive7", abonnes: 36514, lien: "https://www.instagram.com/falkalive7/" }
+        { nom: "Instagram", compte: "@falkalive7", abonnes: 36513, lien: "https://www.instagram.com/falkalive7/" }
       ],
       photo: "images/talents/falka.jpg"
     },
@@ -108,7 +108,7 @@ window.BLOOM = {
       nom: "Nasse",
       categories: ["Valorant"],
       plateformes: [
-        { nom: "TikTok", compte: "@nasse.721", abonnes: 60200, lien: "https://www.tiktok.com/@nasse.721" },
+        { nom: "TikTok", compte: "@nasse.721", abonnes: 60100, lien: "https://www.tiktok.com/@nasse.721" },
         { nom: "Twitch", compte: "Nasse721", abonnes: 33682, lien: "https://www.twitch.tv/nasse721" },
         { nom: "YouTube", compte: "Nasse", abonnes: 29000, lien: "https://www.youtube.com/@Nasse721" },
         { nom: "Instagram", compte: "@nasse_721", abonnes: 12828, lien: "https://www.instagram.com/nasse_721/" }
@@ -119,7 +119,7 @@ window.BLOOM = {
       nom: "M2zoo",
       categories: ["Valorant"],
       plateformes: [
-        { nom: "TikTok", compte: "@m2zoo_", abonnes: 53300, lien: "https://www.tiktok.com/@m2zoo_" },
+        { nom: "TikTok", compte: "@m2zoo_", abonnes: 53400, lien: "https://www.tiktok.com/@m2zoo_" },
         { nom: "Twitch", compte: "M2zoo", abonnes: 19238, lien: "https://www.twitch.tv/m2zoo" },
         { nom: "YouTube", compte: "M2zoo", abonnes: 7000, lien: "https://www.youtube.com/@m2zoo" },
         { nom: "Instagram", compte: "@m2zoo_", abonnes: 8159, lien: "https://www.instagram.com/m2zoo_/" }
@@ -132,7 +132,7 @@ window.BLOOM = {
       plateformes: [
         { nom: "YouTube", compte: "ILAZT", abonnes: 21000, lien: "https://www.youtube.com/@ILAZTT" },
         { nom: "Twitch", compte: "ilazt", abonnes: 2985, lien: "https://www.twitch.tv/ilazt" },
-        { nom: "TikTok", compte: "@ilaztt", abonnes: 2803, lien: "https://www.tiktok.com/@ilaztt" }
+        { nom: "TikTok", compte: "@ilaztt", abonnes: 2808, lien: "https://www.tiktok.com/@ilaztt" }
       ],
       photo: "images/talents/ilazt.jpg"
     },
