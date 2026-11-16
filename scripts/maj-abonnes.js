@@ -12,7 +12,11 @@ const BAISSE_MAX = 0.5;   // en dessous de 50 % de l'ancien chiffre : suspect
 const HAUSSE_MAX = 3;     // au-dessus de 3 fois l'ancien chiffre : suspect
 
 async function json(r, quoi) {
-  if (!r.ok) throw new Error(quoi + ' répond ' + r.status);
+  if (!r.ok) {
+    let detail = '';
+    try { const c = await r.json(); detail = (c.error && (c.error.message || c.error)) || ''; } catch (e) { /* vide */ }
+    throw new Error(quoi + ' répond ' + r.status + (detail ? ' (' + String(detail).slice(0, 120) + ')' : ''));
+  }
   return r.json();
 }
 
