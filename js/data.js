@@ -60,11 +60,11 @@ window.BLOOM = {
       categories: ["Valorant", "React", "Multigaming"],
       plateformes: [
         { nom: "YouTube", compte: "Rojin & Fuziah - Valorant", abonnes: 127000, lien: "https://www.youtube.com/@RojinFuziahVLR" },
-        { nom: "TikTok", compte: "@rojin_x_fuziahvlr", abonnes: 84000, lien: "https://www.tiktok.com/@rojin_x_fuziahvlr" },
-        { nom: "Twitch", compte: "RojinEtFuziah", abonnes: 31000, lien: "https://www.twitch.tv/rojinetfuziah" },
+        { nom: "TikTok", compte: "@rojin_x_fuziahvlr", abonnes: 84300, lien: "https://www.tiktok.com/@rojin_x_fuziahvlr" },
+        { nom: "Twitch", compte: "RojinEtFuziah", abonnes: 32057, lien: "https://www.twitch.tv/rojinetfuziah" },
         { nom: "YouTube", compte: "Rojin & Fuziah - Gaming", abonnes: 26000, lien: "https://www.youtube.com/@RojinetFuziah" },
         { nom: "YouTube", compte: "Rojin & Fuziah - React", abonnes: 19000, lien: "https://www.youtube.com/@RojinFuziahReact" },
-        { nom: "Instagram", compte: "@rojinfuziah", abonnes: 9000, lien: "https://www.instagram.com/rojinfuziah/" }
+        { nom: "Instagram", compte: "@rojinfuziah", abonnes: 9262, lien: "https://www.instagram.com/rojinfuziah/" }
       ],
       photo: "images/talents/rojin-fuziah.jpg"
     },
@@ -73,10 +73,10 @@ window.BLOOM = {
       categories: ["IRL", "Multigaming", "React"],
       plateformes: [
         { nom: "YouTube", compte: "Clinko", abonnes: 427000, lien: "https://www.youtube.com/@Clinkoo" },
-        { nom: "TikTok", compte: "@clinko_", abonnes: 193000, lien: "https://www.tiktok.com/@clinko_" },
+        { nom: "TikTok", compte: "@clinko_", abonnes: 193600, lien: "https://www.tiktok.com/@clinko_" },
         { nom: "YouTube", compte: "Clinko TV", abonnes: 170000, lien: "https://www.youtube.com/@ClinkoTV" },
-        { nom: "Twitch", compte: "Clinko", abonnes: 54000, lien: "https://www.twitch.tv/clinko" },
-        { nom: "Instagram", compte: "@clinkoo", abonnes: 19000, lien: "https://www.instagram.com/clinkoo/" },
+        { nom: "Twitch", compte: "Clinko", abonnes: 54969, lien: "https://www.twitch.tv/clinko" },
+        { nom: "Instagram", compte: "@clinkoo", abonnes: 20168, lien: "https://www.instagram.com/clinkoo/" },
         { nom: "YouTube", compte: "Clinko React", abonnes: 19000, lien: "https://www.youtube.com/@ClinkoReact" }
       ],
       photo: "images/talents/clinko.jpg"
@@ -86,10 +86,10 @@ window.BLOOM = {
       categories: ["Valorant", "Multigaming"],
       plateformes: [
         { nom: "YouTube", compte: "DARICK", abonnes: 52000, lien: "https://www.youtube.com/@darick9" },
-        { nom: "TikTok", compte: "@cdarick", abonnes: 49000, lien: "https://www.tiktok.com/@cdarick" },
-        { nom: "Twitch", compte: "Darick", abonnes: 24000, lien: "https://www.twitch.tv/darick" },
+        { nom: "TikTok", compte: "@cdarick", abonnes: 49100, lien: "https://www.tiktok.com/@cdarick" },
+        { nom: "Twitch", compte: "Darick", abonnes: 24419, lien: "https://www.twitch.tv/darick" },
         { nom: "YouTube", compte: "DARICK Gaming", abonnes: 24000, lien: "https://www.youtube.com/@darick_gaming" },
-        { nom: "Instagram", compte: "@moidarick", abonnes: 4000, lien: "https://www.instagram.com/moidarick/" }
+        { nom: "Instagram", compte: "@moidarick", abonnes: 4293, lien: "https://www.instagram.com/moidarick/" }
       ],
       photo: "images/talents/darick.jpg"
     },
@@ -97,10 +97,10 @@ window.BLOOM = {
       nom: "Falka",
       categories: ["Valorant"],
       plateformes: [
-        { nom: "TikTok", compte: "@falkalive", abonnes: 344000, lien: "https://www.tiktok.com/@falkalive" },
-        { nom: "Twitch", compte: "FalkaLive", abonnes: 139000, lien: "https://www.twitch.tv/falkalive" },
+        { nom: "TikTok", compte: "@falkalive", abonnes: 344600, lien: "https://www.tiktok.com/@falkalive" },
+        { nom: "Twitch", compte: "FalkaLive", abonnes: 140221, lien: "https://www.twitch.tv/falkalive" },
         { nom: "YouTube", compte: "Falka", abonnes: 117000, lien: "https://www.youtube.com/@FalkaLive" },
-        { nom: "Instagram", compte: "@falkalive7", abonnes: 36000, lien: "https://www.instagram.com/falkalive7/" }
+        { nom: "Instagram", compte: "@falkalive7", abonnes: 36512, lien: "https://www.instagram.com/falkalive7/" }
       ],
       photo: "images/talents/falka.jpg"
     },
@@ -108,10 +108,10 @@ window.BLOOM = {
       nom: "Nasse",
       categories: ["Valorant"],
       plateformes: [
-        { nom: "TikTok", compte: "@nasse.721", abonnes: 60000, lien: "https://www.tiktok.com/@nasse.721" },
-        { nom: "Twitch", compte: "Nasse721", abonnes: 33000, lien: "https://www.twitch.tv/nasse721" },
+        { nom: "TikTok", compte: "@nasse.721", abonnes: 60200, lien: "https://www.tiktok.com/@nasse.721" },
+        { nom: "Twitch", compte: "Nasse721", abonnes: 33682, lien: "https://www.twitch.tv/nasse721" },
         { nom: "YouTube", compte: "Nasse", abonnes: 29000, lien: "https://www.youtube.com/@Nasse721" },
-        { nom: "Instagram", compte: "@nasse_721", abonnes: 12000, lien: "https://www.instagram.com/nasse_721/" }
+        { nom: "Instagram", compte: "@nasse_721", abonnes: 12828, lien: "https://www.instagram.com/nasse_721/" }
       ],
       photo: "images/talents/nasse.jpg"
     },
@@ -119,10 +119,10 @@ window.BLOOM = {
       nom: "M2zoo",
       categories: ["Valorant"],
       plateformes: [
-        { nom: "TikTok", compte: "@m2zoo_", abonnes: 51000, lien: "https://www.tiktok.com/@m2zoo_" },
-        { nom: "Twitch", compte: "M2zoo", abonnes: 18000, lien: "https://www.twitch.tv/m2zoo" },
+        { nom: "TikTok", compte: "@m2zoo_", abonnes: 53400, lien: "https://www.tiktok.com/@m2zoo_" },
+        { nom: "Twitch", compte: "M2zoo", abonnes: 19238, lien: "https://www.twitch.tv/m2zoo" },
         { nom: "YouTube", compte: "M2zoo", abonnes: 7000, lien: "https://www.youtube.com/@m2zoo" },
-        { nom: "Instagram", compte: "@m2zoo_", abonnes: 7000, lien: "https://www.instagram.com/m2zoo_/" }
+        { nom: "Instagram", compte: "@m2zoo_", abonnes: 8159, lien: "https://www.instagram.com/m2zoo_/" }
       ],
       photo: "images/talents/m2zoo.jpg"
     },
@@ -131,8 +131,8 @@ window.BLOOM = {
       categories: ["Valorant"],
       plateformes: [
         { nom: "YouTube", compte: "ILAZT", abonnes: 21000, lien: "https://www.youtube.com/@ILAZTT" },
-        { nom: "Twitch", compte: "ilazt", abonnes: 3000, lien: "https://www.twitch.tv/ilazt" },
-        { nom: "TikTok", compte: "@ilaztt", abonnes: 2000, lien: "https://www.tiktok.com/@ilaztt" }
+        { nom: "Twitch", compte: "ilazt", abonnes: 2985, lien: "https://www.twitch.tv/ilazt" },
+        { nom: "TikTok", compte: "@ilaztt", abonnes: 2806, lien: "https://www.tiktok.com/@ilaztt" }
       ],
       photo: "images/talents/ilazt.jpg"
     },
@@ -140,10 +140,10 @@ window.BLOOM = {
       nom: "Brams",
       categories: ["Valorant"],
       plateformes: [
-        { nom: "TikTok", compte: "@bramsbewz", abonnes: 39000, lien: "https://www.tiktok.com/@bramsbewz" },
-        { nom: "Twitch", compte: "BramsBewz", abonnes: 32000, lien: "https://www.twitch.tv/bramsbewz" },
+        { nom: "TikTok", compte: "@bramsbewz", abonnes: 39500, lien: "https://www.tiktok.com/@bramsbewz" },
+        { nom: "Twitch", compte: "BramsBewz", abonnes: 33035, lien: "https://www.twitch.tv/bramsbewz" },
         { nom: "YouTube", compte: "BramsBewz", abonnes: 12000, lien: "https://www.youtube.com/@BramsBewz" },
-        { nom: "Instagram", compte: "@bramsbewz", abonnes: 1000, lien: "https://www.instagram.com/bramsbewz/" }
+        { nom: "Instagram", compte: "@bramsbewz", abonnes: 1611, lien: "https://www.instagram.com/bramsbewz/" }
       ],
       photo: "images/talents/brams.jpg"
     }
