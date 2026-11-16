@@ -110,6 +110,9 @@ async function mettreAJour({ f = fetch, cles = { youtube: (process.env.YOUTUBE_K
 }
 
 if (require.main === module) {
+  const k = (process.env.YOUTUBE_KEY || '').trim();
+  // Diagnostic sans dévoiler la clé : longueur et début seulement
+  console.log('Clé YouTube : ' + k.length + ' caractères, ' + (k.startsWith('AIza') ? 'commence bien par AIza' : 'ne commence PAS par AIza (début : ' + k.slice(0, 3) + '…)'));
   mettreAJour().then(r => {
     console.log('Mis à jour :\n  ' + (r.maj.join('\n  ') || 'aucun'));
     if (r.alertes.length) {
