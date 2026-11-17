@@ -125,7 +125,8 @@ async function mettreAJour({ f = fetch, cles = { youtube: (process.env.YOUTUBE_K
     const qui = createur + ' (' + plateforme + ')';
     let nouveau;
     try {
-      nouveau = await SOURCES[plateforme](lien, f, cles);
+      try { nouveau = await SOURCES[plateforme](lien, f, cles); }
+      catch (e1) { await new Promise(r => setTimeout(r, 5000)); nouveau = await SOURCES[plateforme](lien, f, cles); } // 2e essai si petite panne
     } catch (e) {
       rapport.alertes.push(qui + ' : ' + e.message + ', chiffre gardé (' + ancien + ')');
       continue;
