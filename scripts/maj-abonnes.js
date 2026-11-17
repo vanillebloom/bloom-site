@@ -21,6 +21,7 @@ async function json(r, quoi) {
 }
 
 async function youtube(lien, f, cle) {
+  if (typeof cle === 'object') cle = cle && cle.youtube;
   if (!cle) throw new Error('clé YouTube absente');
   const m = lien.match(/\/@([^\/?#]+)/) || lien.match(/\/channel\/(UC[\w-]{22})/);
   if (!m) throw new Error('lien YouTube non reconnu');
@@ -30,6 +31,39 @@ async function youtube(lien, f, cle) {
   const st = d.items && d.items[0] && d.items[0].statistics;
   if (!st || st.hiddenSubscriberCount) throw new Error('chaîne introuvable ou abonnés masqués');
   return Number(st.subscriberCount);
+}
+
+// Plan B si la clé YouTube est refusée : même info via Apify (quelques centimes par mois)
+function chercherAbonnes(o, prof = 0) {
+  if (!o || typeof o !== 'object' || prof > 4) return null;
+  for (const [k, v] of Object.entries(o)) {
+    if (/subscriber/i.test(k)) {
+      const n = typeof v === 'number' ? v : lireNombre(v);
+      if (Number.isFinite(n) && n > 0) return n;
+    }
+  }
+  for (const v of Object.values(o)) { const n = chercherAbonnes(v, prof + 1); if (n) return n; }
+  return null;
+}
+function lireNombre(t) {
+  const m = String(t || '').replace(/\s/g, '').replace(',', '.').match(/([\d.]+)\s*([kKmM]|M de|k)?/);
+  if (!m) return NaN;
+  const n = parseFloat(m[1]);
+  return /m/i.test(m[2] || '') ? Math.round(n * 1e6) : /k/i.test(m[2] || '') ? Math.round(n * 1e3) : n;
+}
+async function youtubeApify(lien, f, cles) {
+  const items = await apify(f, cles.apify, 'streamers~youtube-scraper', {
+    startUrls: [{ url: lien }], maxResults: 1, maxResultsShorts: 0, maxResultStreams: 0,
+  });
+  for (const it of items || []) { const n = chercherAbonnes(it); if (n) return n; }
+  throw new Error('abonnés YouTube introuvables via Apify');
+}
+async function youtubeAuto(lien, f, cles) {
+  try { return await youtube(lien, f, cles.youtube); }
+  catch (e) {
+    try { return await youtubeApify(lien, f, cles); }
+    catch (e2) { throw new Error(e.message + ' ; plan B Apify : ' + e2.message); }
+  }
 }
 
 async function apify(f, token, acteur, input) {
@@ -74,7 +108,7 @@ async function twitch(lien, f) {
   return n;
 }
 
-const SOURCES = { YouTube: youtube, TikTok: tiktok, Instagram: instagram, Twitch: twitch };
+const SOURCES = { YouTube: youtubeAuto, TikTok: tiktok, Instagram: instagram, Twitch: twitch };
 
 async function mettreAJour({ f = fetch, cles = { youtube: (process.env.YOUTUBE_KEY || '').trim().replace(/^["']|["']$/g, ''), apify: (process.env.APIFY_TOKEN || '').trim().replace(/^["']|["']$/g, '') }, fichier = FICHIER } = {}) {
   const lignes = fs.readFileSync(fichier, 'utf8').split('\n');
@@ -112,7 +146,7 @@ async function mettreAJour({ f = fetch, cles = { youtube: (process.env.YOUTUBE_K
 if (require.main === module) {
   const k = (process.env.YOUTUBE_KEY || '').trim();
   // Diagnostic sans dévoiler la clé : longueur et début seulement
-  console.log('Clé YouTube : ' + k.length + ' caractères, ' + (k.startsWith('AIza') ? 'commence bien par AIza' : 'ne commence PAS par AIza (début : ' + k.slice(0, 3) + '…)'));
+  console.log('Clé YouTube : ' + k.length + ' caractères, ' + (k.startsWith('AIza') ? 'commence bien par AIza' : 'ne commence PAS par AIza') + ', finit par …' + k.slice(-4));
   mettreAJour().then(r => {
     console.log('Mis à jour :\n  ' + (r.maj.join('\n  ') || 'aucun'));
     if (r.alertes.length) {
