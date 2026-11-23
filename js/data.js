@@ -76,8 +76,8 @@ window.BLOOM = {
         { nom: "TikTok", compte: "@clinko_", abonnes: 193800, lien: "https://www.tiktok.com/@clinko_" },
         { nom: "YouTube", compte: "Clinko TV", abonnes: 175000, lien: "https://www.youtube.com/@ClinkoTV" },
         { nom: "Twitch", compte: "Clinko", abonnes: 55073, lien: "https://www.twitch.tv/clinko" },
-        { nom: "Instagram", compte: "@clinkoo", abonnes: 20197, lien: "https://www.instagram.com/clinkoo/" },
-        { nom: "YouTube", compte: "Clinko React", abonnes: 20500, lien: "https://www.youtube.com/@ClinkoReact" }
+        { nom: "YouTube", compte: "Clinko React", abonnes: 20500, lien: "https://www.youtube.com/@ClinkoReact" },
+        { nom: "Instagram", compte: "@clinkoo", abonnes: 20197, lien: "https://www.instagram.com/clinkoo/" }
       ],
       photo: "images/talents/clinko.jpg"
     },
