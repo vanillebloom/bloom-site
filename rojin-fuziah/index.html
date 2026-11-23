@@ -60,9 +60,17 @@
     .abos{display:flex;align-items:baseline;gap:7px;padding:6px 16px;border-radius:999px;background:var(--cream);border:3px solid var(--ink);box-shadow:0 3px 0 var(--ink);margin-top:-6px}
     .abos strong{font-family:"Lilita One",sans-serif;font-weight:400;font-size:22px;line-height:1.1}
     .abos span{font-size:13px;font-weight:800}
+    .ext{position:relative;width:100%;display:flex;flex-direction:column;gap:12px;padding:16px 16px 14px;border-radius:18px;background:#7B1FC4;color:#fff;border:3px solid var(--ink);box-shadow:0 5px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+    .ext:hover{color:#fff;transform:translateY(-2px);box-shadow:0 7px 0 var(--ink)}
+    .ext:focus-visible{outline:3px solid #fff;outline-offset:3px}
+    .ext .new{position:absolute;top:-12px;right:14px;font-size:11px;font-weight:900;padding:3px 9px;border-radius:999px;background:var(--orange);color:var(--ink);border:2px solid var(--ink);transform:rotate(3deg)}
+    .ext .head{display:flex;align-items:center;gap:12px}
+    .ext .chip{background:var(--orange);border:2.5px solid var(--ink)}
+    .ext .s{color:#EBD9FF;font-weight:700}
+    .ext .cta{text-align:center;font-family:"Lilita One",sans-serif;font-size:17px;padding:8px;border-radius:12px;background:var(--cream);color:var(--ink);border:2.5px solid var(--ink)}
     footer{margin-top:6px;font-size:12px;font-weight:800;color:#fff;text-shadow:0 1px 3px rgba(27,20,32,.7)}
     footer a{color:#fff;text-decoration:underline}
-    @media (prefers-reduced-motion:reduce){.btn,.mail{transition:none}}
+    @media (prefers-reduced-motion:reduce){.btn,.mail,.ext{transition:none}}
   </style>
 </head>
 <body>
@@ -123,6 +131,16 @@
       <span class="left"><span class="chip"><img src="img/airup.png" width="96" height="96" alt=""></span><span class="t">air up</span></span>
     </a></li>
   </ul>
+
+  <h2>NE RATE RIEN !</h2>
+  <a class="ext" href="https://chromewebstore.google.com/detail/rojin-fuziah-%E2%80%94-notificati/mgfbfajgcgaimenbdedakpokcjldjgem" target="_blank" rel="noopener">
+    <span class="new">NOUVEAU</span>
+    <span class="head">
+      <span class="chip"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1B1420" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5a2 2 0 1 1 4 0V6h4v4h-1.5a2 2 0 1 0 0 4H17v5H6v-5h1.5a2 2 0 1 0 0-4H6V6h3z"/></svg></span>
+      <span class="txt"><span class="t">Notre extension Chrome</span><span class="s">Toutes nos actus directement dans ton navigateur</span></span>
+    </span>
+    <span class="cta">Ajouter à Chrome</span>
+  </a>
 </main>
 <script src="/js/data.js"></script>
 <script>
